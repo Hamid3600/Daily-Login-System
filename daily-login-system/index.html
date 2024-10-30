@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Login System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Daily Login System</h1>
+        <div class="notification-bar">
+            <span id="adminNotificationCount">0</span> Notifications
+        </div>
+    </header>
+
+    <main>
+        <div class="login-form">
+            <h2>Login</h2>
+            <input type="text" id="memberId" placeholder="Enter Member ID">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="login()">Login</button>
+            <div id="loginMessage"></div>
+        </div>
+
+        <div class="admin-section">
+            <h2>Admin Section</h2>
+            <div id="adminNotifications"></div>
+            <div id="loginHistory"></div>
+            <h3>Add New User</h3>
+            <input type="text" id="newUserId" placeholder="New User ID">
+            <button onclick="addUser()">Add User</button>
+            <div id="newUserMessage"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Daily Login System</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
